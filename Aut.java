@@ -24,7 +24,7 @@ public class Aut {
         int estadoAtual = 0;
         for (char c : palavra.toCharArray()) {
             if (alfabeto.indexOf(c) == -1) {
-                return false;
+                return false; // palavra com caractere inválido já trava aqui e cabo
             }
             boolean transicaoEncontrada = false;
             for (Transicao t : transicoes) {
