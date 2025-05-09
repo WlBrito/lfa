@@ -13,6 +13,7 @@ public class Aut {
     public Aut(List<Transicao> transicoes, Set<Integer> estadosFinais) {
         this.transicoes = transicoes;
         this.estadosFinais = estadosFinais;
+        this.estadosFinais.add(0);
     }
 
     public Aut() {
